@@ -1,0 +1,83 @@
+/* Стилі для навігації */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative; /* Для батьківського елемента */
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Зміна кольору кнопок навігації */
+nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    color: #555; /* Темно-сірий колір для кнопок */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Плавний перехід для фону і кольору */
+}
+
+nav ul li a:hover {
+    background-color: #d3d3d3; /* Сірий фон при наведенні */
+    color: black; /* Чорний текст при наведенні */
+}
+
+/* Стилі для підменю */
+.submenu {
+    display: none;
+    position: absolute; /* Позиціонування відносно батьківського елемента */
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px;
+    width: 150px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Плавний ефект появи */
+}
+
+nav ul li:hover .submenu {
+    display: block;
+    opacity: 1; /* Відображаємо підменю з плавним ефектом */
+}
+
+/* Стиль для іконки трикутника */
+.icon {
+    margin-left: 5px;
+    font-size: 10px;
+    transition: transform 0.3s ease; /* Плавне обертання іконки */
+}
+
+nav ul li:hover .icon {
+    transform: rotate(180deg); /* Обертання іконки при наведенні */
+}
+
+/* Стилі підменю при наведенні */
+.submenu li a {
+    padding: 10px;
+    display: block;
+    color: #555; /* Темно-сірий для підменю */
+}
+
+.submenu li a:hover {
+    background-color: #d3d3d3; /* Сірий фон при наведенні */
+    color: black; /* Чорний текст при наведенні */
+}
+
+/* Стилі кнопок */
+.btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease; /* Плавний перехід кольору */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Трохи темніший колір при наведенні */
+}

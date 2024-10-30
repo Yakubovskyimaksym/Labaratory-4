@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW - Головна</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navigation.css"> 
+</head>
+
+<body>
+    <header>
+        <h1>Вітаємо на сайті BMW</h1>
+        <nav>
+            
+            <ul>
+            <li>
+                <a href="#">МЕНЮ <span class="icon">&#9660;</span></a>
+            <ul class="submenu">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="quiz.html"> &#214; Опитувальник</a></li>
+                <li><a href="news.html">&#8469; Новини</a></li>
+                <li><a href="achievements.html">&#x1D4A2; Досягнення</a></li>
+                <li><a href="register.html">Створити акаунт</a></li>
+                <li><a href="terms.html">Умови реєстрації</a></li>
+                <li><a href="bootstrap.html">Bootstrap</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+
+            <div class="auth-buttons">
+    <a class="btn">Вхід</a> <!-- Заміна href на # -->
+</div>
+<!-- Модальне вікно -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Форма автентифікації</h2>
+        <form>
+            <label for="username">Ім'я користувача:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit">Увійти</button>
+        </form>
+    </div>
+</div>
+
+        </nav>
+    </header>
+
+    <div class="main">
+    
+    
+
+    <section>
+        <h2>Про BMW</h2>
+        <p><big>BMW</big> <strong>(Bayerische Motoren Werke AG)</strong> — німецький виробник автомобілів, мотоциклів та
+            двигунів. Компанія відома своїм інноваційним підходом до створення високоякісних автомобілів. Заснована в
+            1916 році в Мюнхені, Німеччина, BMW почала свій шлях як виробник авіаційних двигунів, але вже понад століття
+            компанія славиться своїми автомобілями преміум-класу та мотоциклами.</p>
+
+        <i>Компанія BMW стала уособленням німецької інженерної досконалості та інноваційного підходу до виробництва.
+            Основна філософія бренду — це поєднання потужності, динаміки та розкоші, що дозволяє створювати автомобілі,
+            які дарують водієві неперевершене відчуття від водіння.</i>
+        <br>
+
+
+        <style>
+            div {
+                text-align: center;
+            }
+        </style>
+
+        <div>
+            <img src="bmw.jpg" alt="BMW" class="responsive-img">
+        </div>
+
+    </section>
+    <hr>
+
+    <section>
+
+        <h2>Що робить BMW особливим?</h2>
+        <br>
+        <strong> 1 Інновації та технології:</strong> BMW постійно впроваджує новітні технології, такі як система
+        <ins>iDrive</ins>, яка дозволяє керувати багатьма функціями автомобіля за допомогою одного контролера.
+        <br>
+        <strong>2 Дизайн:</strong> Автомобілі BMW відомі своїм елегантним і спортивним дизайном. Вони поєднують в собі
+        естетику та функціональність, що робить їх привабливими для багатьох автолюбителів.
+        <br>
+        <strong> 3 Продуктивність:</strong> BMW славиться своїми потужними двигунами та відмінною керованістю. Вони
+        пропонують широкий спектр моделей від компактних автомобілів до розкішних седанів і спортивних автомобілів.
+        <br>
+        <strong>4 Екологічність:</strong> Компанія активно працює над зменшенням впливу на навколишнє середовище,
+        розробляючи електричні та <ins>гібридні моделі</ins>, такі як BMW i3 та i8.
+    </section>
+
+<section class="feedback-section">
+    <h2>Відгуки користувачів</h2>
+    <div class="feedback-container" id="feedback-container">
+        <div class="feedback-item">
+            <p><strong>Олександр:</strong> Чудовий сайт! Легко знайти потрібну інформацію.</p>
+        </div>
+        <div class="feedback-item">
+            <p><strong>Марія:</strong> Дуже сподобалася навігація. Все інтуїтивно зрозуміло.</p>
+        </div>
+        <div class="feedback-item">
+            <p><strong>Іван:</strong> Мені подобається дизайн. Чудова робота!</p>
+        </div>
+    </div>
+
+    <h3>Залиште свій відгук</h3>
+    <form id="feedback-form">
+        <label for="username">Ваше ім'я:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="message">Ваш відгук:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Відправити</button>
+    </form>
+</section>
+
+
+
+
+    <h2></h2>
+
+
+
+    <button class="button" id="button-top" onclick="scrollToTop()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50">
+            <path d="M12 22L12 6M12 6L8 10M12 6L16 10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+    </button>
+
+
+
+    <h2></h2>
+    <h2></h2>
+    <br>
+    <h2></h2>
+
+</div>
+  
+
+    <script>
+        let btn = document.getElementById("button-top");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+
+    <script>
+    // Код для модального вікна
+    const modal = document.getElementById("modal");
+    const btnModal = document.querySelector(".btn"); // Ваша кнопка "Вхід"
+
+    // Відкриття модального вікна при натисканні на кнопку "Вхід"
+    btnModal.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // Закриття модального вікна
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    // Закриття модального вікна при натисканні за межами вікна
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            closeModal();
+        }
+    }
+</script>
+<script>
+    document.getElementById("feedback-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Запобігаємо перезавантаженню сторінки
+
+        // Отримання значень з форми
+        const username = document.getElementById("username").value;
+        const message = document.getElementById("message").value;
+
+        // Створення нового елемента для відгуку
+        const feedbackContainer = document.getElementById("feedback-container");
+        const newFeedback = document.createElement("div");
+        newFeedback.classList.add("feedback-item");
+        newFeedback.innerHTML = `<p><strong>${username}:</strong> ${message}</p>`;
+
+        // Додавання нового відгуку до контейнера
+        feedbackContainer.appendChild(newFeedback);
+
+        // Очистка форми
+        document.getElementById("feedback-form").reset();
+    });
+</script>
+
+</body>
+
+</html>
